@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FoodReach | Every Meal Deserves a Home</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="/index.html"><span class="brand-mark">F</span><span>FoodReach<small>Every Meal Deserves a Home</small></span></a>
+  <nav><a href="#how">How it works</a><a href="#donate">Donate food</a><a href="#available">Available food</a><a class="nav-login" href="/login.html" id="accountLink">Log in</a><button class="button button-small hidden" id="logoutButton">Log out</button></nav>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-copy"><span class="eyebrow">LESS WASTE. MORE HOPE.</span><h1>Good food should<br><em>feed people,</em> not bins.</h1><p>FoodReach connects surplus food from weddings, restaurants and community events with people and organisations who can put it to good use.</p><div class="hero-actions"><a class="button" href="#donate">Share surplus food <span>→</span></a><a class="text-link" href="#available">Explore food reports</a></div><div class="trust-line"><span>✓</span> A simple step towards a hunger-free community</div></div>
+  <div class="hero-art" aria-label="Illustration of fresh food"><div class="sun"></div><div class="art-leaf leaf-one"></div><div class="art-leaf leaf-two"></div><div class="food-bowl"><span>🥗</span></div><div class="art-note note-top">Good food, shared</div><div class="art-note note-bottom">Waste less. Care more.</div></div>
+</section>
+<section class="impact-strip"><div><strong>01</strong><span>Report surplus food</span></div><div><strong>02</strong><span>Connect with helpers</span></div><div><strong>03</strong><span>Get food to people</span></div></section>
+<section class="section" id="how"><div class="section-heading"><span class="eyebrow">HOW FOODREACH WORKS</span><h2>Small actions. Real impact.</h2><p>Three simple steps can help good food reach someone who needs it.</p></div><div class="steps"><article class="step-card"><span class="step-number">01</span><div class="step-icon">🍲</div><h3>Share food details</h3><p>Tell the community what food is available, how much there is and when it should be collected.</p></article><article class="step-card"><span class="step-number">02</span><div class="step-icon">🤝</div><h3>Connect with helpers</h3><p>Make information visible so authorised volunteers and organisations can coordinate collection.</p></article><article class="step-card"><span class="step-number">03</span><div class="step-icon">💚</div><h3>Make a difference</h3><p>Coordinate safe, timely pickup and help suitable surplus food reach people.</p></article></div></section>
+<section class="work-grid" id="donate"><div class="section-intro"><span class="eyebrow">FOR FOOD PROVIDERS</span><h2>Got extra food?<br>Give it a new purpose.</h2><p>Use this form to report surplus food from a function, restaurant, hotel or community event. You need to log in before submitting.</p><div class="safety-note"><strong>Food safety matters</strong><p>Only report food that has been handled and stored safely. Include accurate pickup deadlines and storage details.</p></div></div>
+<div class="form-card"><div class="form-heading"><div><span class="eyebrow">FOOD DONATION FORM</span><h3>Report surplus food</h3></div><span class="form-icon">＋</span></div>
+<form id="foodForm">
+<div class="field"><label for="foodName">Food name *</label><input id="foodName" maxlength="120" required placeholder="e.g. Vegetable rice"></div>
+<div class="field-row"><div class="field"><label for="quantityKg">Quantity (kg) *</label><input id="quantityKg" type="number" min="0.1" max="999999" step="0.1" required placeholder="e.g. 15"></div><div class="field"><label for="providerType">Provider type *</label><select id="providerType" required><option value="">Choose type</option><option>Wedding / Function</option><option>Restaurant</option><option>Hotel</option><option>Community event</option><option>Other</option></select></div></div>
+<div class="field"><label for="pickupDeadline">Pickup deadline *</label><input id="pickupDeadline" type="datetime-local" required></div>
+<div class="field"><label for="pickupAddress">Pickup address *</label><textarea id="pickupAddress" rows="2" maxlength="500" required placeholder="Full pickup location and landmark"></textarea></div>
+<div class="field"><label for="storageDetails">Preparation and storage details</label><textarea id="storageDetails" rows="2" maxlength="1000" placeholder="When was it prepared? How has it been stored?"></textarea></div>
+<div class="field"><label for="notes">Additional notes</label><textarea id="notes" rows="2" maxlength="1000" placeholder="Any helpful collection information"></textarea></div>
+<button class="button button-wide" type="submit">Submit food report <span>→</span></button><p class="form-message" id="formMessage" role="status"></p><p class="fine-print">Your report will be stored in the FoodReach database.</p>
+</form></div></section>
+<section class="section available-section" id="available"><div class="section-heading heading-row"><div><span class="eyebrow">COMMUNITY FOOD BOARD</span><h2>Food reports near you</h2><p>Reports shared by signed-in food providers.</p></div><button class="button button-outline" id="refreshButton">↻ Refresh</button></div><div id="reportList" class="report-grid"><p>Loading food reports…</p></div></section>
+<section class="closing"><div><span class="eyebrow">EVERY MEAL DESERVES A HOME</span><h2>Let kindness travel<br>one meal at a time.</h2></div><a class="button button-light" href="#donate">Share food today <span>→</span></a></section>
+</main>
+<footer><a class="brand footer-brand" href="/index.html"><span class="brand-mark">F</span><span>FoodReach<small>Every Meal Deserves a Home</small></span></a><p>Built for communities that believe food is too valuable to waste.</p><span>© 2026 FoodReach · Student project</span></footer>
+<script src="/js/app.js"></script>
+</body></html>
